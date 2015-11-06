@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Cat Clicker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div id="catlist">
+	<ul class="catList"></ul>
+	<div class="cat">
+		<h2 class="catName"></h2>
+		<div id="catCount"></div>
+		<img src="" alt="cat image">
+	</div>
+	<button id="btnAdmin">Admin</button>
+	<form id="admin-panel">
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="name">
+		<label for="imgUrl">Image URL</label>
+		<input type="text" name="imgUrl" id="imgUrl">
+		<label for="clickCount"># Clicks</label>
+		<input type="text" name="clickCount" id="clickCount">
+		<button type="submit" id="btnAdminSubmit">Submit</button>
+		<button id="btnAdminCancel">Cancel</button>
+	</form>
+
+
+	<!--<div id="catlist">
 		<button id='button1'>cat 1</button>
 		<button id='button2'>cat 2</button>
 		<button id='button3'>cat 3</button>
@@ -36,7 +57,8 @@
 		<span class="counter">0</span> clicks
 		<br>
    		<img class="clicker" src="cat_picture5.jpeg">
-   	</div>
+   	</div>-->
+
 </body>
 </html>
 <script src="jquery.js"></script>
